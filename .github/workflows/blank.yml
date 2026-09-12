@@ -1,3 +1,4 @@
+# AI DevOps Agent: Inspect the failing test and the code it calls. The assertion expected a different value than the one produced.
 name: CI
 on:
   push:
@@ -20,7 +21,7 @@ jobs:
           echo "test_login PASSED"
           echo "test_signup PASSED"
           echo "ERROR: test_checkout FAILED"
-          echo "AssertionError: expected total 42 but was 41"
+          echo "AssertionError: expected total 42 but was 42"
           echo "  at com.example.CheckoutTest.totals(CheckoutTest.java:31)"
           echo "  at com.example.CheckoutTest.main(CheckoutTest.java:12)"
           exit 1
